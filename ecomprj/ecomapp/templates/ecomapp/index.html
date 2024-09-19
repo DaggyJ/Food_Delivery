@@ -1,0 +1,159 @@
+{% extends "base.html" %} {% load static %} 
+{% block title %}home{% endblock title %} 
+{% block sliders %}
+<div class="carousel-inner">
+  <div
+    id="carouselExampleAutoplaying"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-item active">
+      <img src="{% static "ecomapp/img/banner/b1.jpg" %}" class="d-block
+      w-100" alt="slider-images" />
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "ecomapp/img/banner/b2.jpg" %}" class="d-block
+      w-100" alt="slider-images" />
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "ecomapp/img/banner/b3.jpg" %}" class="d-block
+      w-100" alt="slider-images" />
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "ecomapp/img/banner/b4.jpg" %}" class="d-block
+      w-100" alt="slider-images" />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleAutoplaying"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleAutoplaying"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock sliders %} {% block content %}
+<div class="container text-center">
+  <h2 class="text--center">Products</h2>
+  <br /><br />
+  <div class="row container">
+    <div class="col-sm-4 ">
+      <div class="card" style="width: 18rem">
+        <img src="{% static "ecomapp/img/products/buffalo-ghee.png" %}"
+        class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="{% url "category" 'PF' %}" class="text-decoration-none">
+            <h5 class="card-title">Protein foods</h5>
+          </a>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-success align-item-center">Order now</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+       </div>
+    </div>
+    <div class="col-sm-4 col-sm-4">
+      <div class="card" style="width: 18rem">
+        <img src="{% static "ecomapp/img/products/cow-milk.png" %}"
+            class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="{% url "category" 'FR' %}" class="text-decoration-none">
+            <h5 class="card-title">Fruits</h5>
+          </a>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+
+          <a href="#" class="btn btn-success align-item-center">Order now</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-sm-4">
+      <div class="card" style="width: 18rem">
+        <img src="{% static "ecomapp/img/products/curd-premium.png" %}"
+        class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="{% url "category" 'VG' %}" class="text-decoration-none">
+            <h5 class="card-title">Vegetables</h5>
+          </a>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-success align-item-center">Order now</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+       </div>
+    </div>
+    </div>
+      <br /><br />
+  <div class="row container">
+    <div class="col-sm-4 col-sm-4">
+      <div class="card" style="width: 18rem">
+        <img src="{% static "ecomapp/img/products/kulfi.png" %}"
+        class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="{% url "category" 'DY' %}" class="text-decoration-none">
+            <h5 class="card-title">Dairy Products</h5>
+          </a>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-success align-item-center">Order now</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+       </div>
+    </div>
+    <div class="col-sm-4 col-sm-4">
+      <div class="card" style="width: 18rem">
+        <img src="{% static "ecomapp/img/products/icbars.png" %}"
+            class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="{% url "category" 'GN' %}" class="text-decoration-none">
+            <h5 class="card-title">Grains</h5>
+          </a>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+
+          <a href="#" class="btn btn-success align-item-center">Order now</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <br><br><br>
+  </div>
+  <br><br><br>
+ 
+</div>
+     
+{% endblock content %}
